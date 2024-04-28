@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projet_memory/style_play.css">
+    <title>Jouer</title>
+</head>
+<body onkeydown="reload(event)">
+    <header id="header">
+        <div class="titre">
+            <h1>ENI - <strong>MEMORY</strong> - Accueil</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="/projet_memory/index.html">Accueil</a>
+            <a href="/projet_memory/inscription.html">S'inscrire</a>
+            <a href="#">Se connecter</a>
+            <a href="#">Profil</a>
+            <a href="/projet_memory/jouer.html">Joueur</a>
+        </nav>
+    </header>
+
+    <main class="container" >
+        <div class="rules">
+            <div class="text_jouer">
+                <table>
+                    <thead>
+                        <tr>
+                        <th colspan="5" class="titre_table">Derniers meilleurs scores :</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pseudo</td>
+                            <td>Score</td>
+                            <td>Taille</td>
+                            <td>Choix Memory</td>
+                            <td>Date</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="text_win">Tenter de gagner avec le moins d'essais possible.</p>
+                <p>Appuyez sur la <strong>barre d'espace</strong> pour relancer le jeu.</p>
+            </div>
+
+            <div class="count">Nombre de coup : <span class="moves">0</span></div>
+
+            <div id="grid"></div>
+
+            <div class="restart">
+                <i class="fa fa-repeat"></i>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="/projet_memory/js/app.js"></script>
+</body>
+</html>
